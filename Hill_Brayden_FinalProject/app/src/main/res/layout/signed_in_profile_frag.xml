@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/support_blue"
+    android:backgroundTint="@color/support_blue">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edge"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".04">
+
+        <ImageView
+            android:id="@+id/Profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/rounded_edge"
+            android:elevation="8dp"
+            app:srcCompat="@drawable/ic_avatar_svgrepo_com" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="24dp"
+            android:minWidth="200dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/profile_username"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:autoSizeTextType="uniform"
+                android:scrollHorizontally="true"
+                android:text="@string/signed_username"
+                android:textColor="@color/support_white" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/profile_userRole"
+                    android:layout_width="0dp"
+                    android:layout_height="47dp"
+                    android:hint="Role"
+                    android:text="@string/signed_user_role"
+                    android:textColor="@color/support_blue"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/qr_code"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/qr_code"
+                    android:layout_width="48dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/profile_userRole"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/profile_userRole"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_qr_code_scan_svgrepo_com" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_scroller"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="@color/purple_700"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="8dp"
+            android:background="@drawable/rounded_edge"
+            android:backgroundTint="@color/support_white">
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/ic_phone_svgrepo_com" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:hint="Phone"
+                android:paddingRight="16dp"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/support_blue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="8dp"
+            android:background="@drawable/rounded_edge"
+            android:backgroundTint="@color/support_white">
+
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/ic_email_svgrepo_com" />
+
+            <EditText
+                android:id="@+id/email_address"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:hint="Email"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/support_blue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="8dp"
+            android:background="@drawable/rounded_edge"
+            android:backgroundTint="@color/support_white">
+
+            <ImageView
+                android:id="@+id/fb_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/ic__282541_fb_social_media_facebook_facebook_logo_social_network_icon" />
+
+            <EditText
+                android:id="@+id/fb_link"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:hint="Facebook"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/support_blue"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="8dp"
+            android:background="@drawable/rounded_edge"
+            android:backgroundTint="@color/support_white">
+
+            <ImageView
+                android:id="@+id/insta_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/ic__335781_camera_instagram_social_media_instagram_logo_icon" />
+
+            <EditText
+                android:id="@+id/insta_link"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:hint="Instagram"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/support_blue"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="8dp"
+            android:background="@drawable/rounded_edge"
+            android:backgroundTint="@color/support_white">
+
+            <ImageView
+                android:id="@+id/twitter_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/ic__305172_tweet_twitter_twitter_logo_icon" />
+
+            <EditText
+                android:id="@+id/twitter_link"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:hint="Twitter"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/support_blue"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:elevation="8dp"
+            android:background="@drawable/rounded_edge"
+            android:backgroundTint="@color/support_white">
+
+            <ImageView
+                android:id="@+id/linkin_icon"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                app:srcCompat="@drawable/ic__282542_linkedin_network_social_network_linkedin_logo_icon" />
+
+            <EditText
+                android:id="@+id/linkin_link"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:hint="Linkedin"
+                android:textColor="@color/secondary"
+                android:textColorHint="@color/support_blue"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_edge"
+            android:backgroundTint="@color/support_white"
+            android:text="Save"
+            android:textColor="@color/support_blue" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

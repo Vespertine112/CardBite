@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "462371060159",
+    "project_id": "cardbite-51e79",
+    "storage_bucket": "cardbite-51e79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:462371060159:android:c19a0a9100d3590431c90a",
+        "android_client_info": {
+          "package_name": "com.example.hill_brayden_finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "462371060159-4v2to3ki9uglr7id6p2hniftv0f5rl9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrrTZjj-JdjOfLuTLx7YhVQ8nfRMlS-N0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "462371060159-4v2to3ki9uglr7id6p2hniftv0f5rl9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

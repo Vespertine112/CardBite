@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/logo_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18">
+
+        <TextView
+            android:id="@+id/card_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aquire_bold"
+            android:text="TextView"
+            android:textColor="@color/support_blue"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/bite_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/aquire_bold"
+            android:text="TextView"
+            android:textColor="@color/support_blue"
+            android:textSize="60sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontal_bar_logo"
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        app:layout_constraintLeft_toLeftOf="@id/logo_container"
+        app:layout_constraintTop_toBottomOf="@id/logo_container"
+        app:layout_constraintRight_toRightOf="@id/logo_container"
+        android:layout_margin="8dp"
+        android:background="@color/support_white" />
+
+    <TextView
+        android:id="@+id/splash_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:fontFamily="@font/aquire"
+        android:text="@string/slogan"
+        android:textColor="@color/support_white"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/horizontal_bar_logo"
+        app:layout_constraintRight_toRightOf="@id/horizontal_bar_logo"
+        app:layout_constraintTop_toTopOf="@id/horizontal_bar_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

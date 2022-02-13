@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CardBite</string>
+    <string name="splash_card">Card</string>
+    <string name="splash_bite">Bite</string>
+    <string name="slogan">More Cards, More Problems</string>
+    <string name="login_login">Login.</string>
+    <string name="login_passHint">Password</string>
+    <string name="login_emailHint">Email</string>
+    <string name="login_sign_in">Sign in</string>
+    <string name="login_new_user">New User?</string>
+    <string name="login_scan_qr">Scan QR Code?</string>
+    <string name="register_name">Name</string>
+    <string name="register_head_text">Register.</string>
+    <string name="register_reg_btn">Register</string>
+    <string name="signed_username">ERROR NO NAME</string>
+    <string name="signed_user_role">ERROR NO ROLE</string>
+    <string name="qr_display_title">\'s QR Code!</string>
+</resources>

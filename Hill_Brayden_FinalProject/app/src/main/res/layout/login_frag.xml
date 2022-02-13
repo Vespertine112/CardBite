@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/login_login_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:fontFamily="@font/aquire_bold"
+        android:gravity="left"
+        android:text="@string/login_login"
+        android:textColor="@color/support_white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_email"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/login_emailHint"
+        app:layout_constraintEnd_toEndOf="@+id/login_login_text"
+        app:layout_constraintStart_toStartOf="@+id/login_login_text"
+        app:layout_constraintTop_toBottomOf="@+id/login_login_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_emailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/support_white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_password"
+        style="@style/TextInputLayoutStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/login_passHint"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/support_blue"
+        app:layout_constraintEnd_toEndOf="@+id/login_email"
+        app:layout_constraintStart_toStartOf="@+id/login_email"
+        app:layout_constraintTop_toBottomOf="@+id/login_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_passwordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:inputType="textPassword"
+            android:textColor="@color/support_white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_signin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_sign_in"
+        android:layout_margin="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_password"
+        app:layout_constraintStart_toStartOf="@+id/login_password"
+        app:layout_constraintTop_toBottomOf="@+id/login_password"
+        app:rippleColor="@color/support_white"
+        app:backgroundTint="@color/support_blue" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login_new_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/login_new_user"
+        android:textColor="@color/support_blue"
+        app:backgroundTint="@color/secondary"
+        app:layout_constraintEnd_toEndOf="@+id/login_signin"
+        app:layout_constraintStart_toStartOf="@+id/login_signin"
+        app:layout_constraintTop_toBottomOf="@+id/login_signin"
+        app:rippleColor="@color/primary" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/scan_qr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/login_scan_qr"
+        android:textColor="@color/support_blue"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/login_signin"
+        app:layout_constraintStart_toStartOf="@+id/login_signin"
+        app:layout_constraintTop_toBottomOf="@+id/login_new_user"
+        app:rippleColor="@color/primary"
+        app:backgroundTint="@color/secondary" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
